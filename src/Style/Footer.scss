@@ -1,0 +1,23 @@
+.Footer {
+//   background-color: var(--container-color);
+  padding: 20px;
+  bottom: 0;
+  position: relative;
+  width: 100%!important;
+  .container {
+    width: 1200px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .opensource {
+    color: var(--first-color);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 5px;
+    img {
+      width: 30px;
+    }
+  }
+}

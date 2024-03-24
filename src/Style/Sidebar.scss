@@ -1,0 +1,107 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background-color: var(--container-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  padding: 15px;
+  width: 300px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar.closed {
+  left: -300px;
+}
+
+.Side_title {
+  color: var(--first-color);
+  letter-spacing: 2px;
+  z-index: 100;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 15px 0;
+  }
+}
+
+.Close {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list-group {
+  body.sidebar-collapse & {
+    padding: 0;
+  }
+  > a,
+  > li {
+    display: block;
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: var(--first-color);
+    }
+    &.active {
+      color: var(--first-color);
+    }
+  }
+  .list-group--horizontal > .list-group-item {
+    border-radius: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--container-color);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+// media queries  for responsiveness
+@media only screen and (max-width: 1024px) {
+  .sidebar{
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .sidebar{
+    width: 250px;
+  }
+}

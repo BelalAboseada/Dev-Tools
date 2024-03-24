@@ -1,0 +1,11 @@
+import "./App.scss";
+import Layout from "./Pages/Layout";
+function App() {
+  return (
+    <>
+      <Layout />
+    </>
+  );
+}
+
+export default App;
