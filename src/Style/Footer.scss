@@ -1,11 +1,11 @@
 .Footer {
-//   background-color: var(--container-color);
-  padding: 20px;
+  background-color: var(--container-color);
+  padding: 10px;
   bottom: 0;
   position: relative;
-  width: 100%!important;
+  width: 100%;
   .container {
-    width: 1200px;
+    max-width: 1200px;
       display: flex;
       align-items: center;
       flex-direction: column;

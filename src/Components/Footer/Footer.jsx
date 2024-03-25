@@ -14,11 +14,6 @@ const Footer = () => {
             <img src={GitHub} loading="lazy" alt="GitHub" />
           </a>
         </p>
-        <p className="portfolio">
-          <a target="_blank" href="https://belal-portfolio.vercel.app/">
-            Portfolio
-          </a>
-        </p>
       </div>
     </div>
   );
