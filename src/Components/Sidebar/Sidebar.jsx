@@ -1,6 +1,7 @@
 import { Categories } from "../../assets/data/data";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import "../../Style/Sidebar.scss";
+
 const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
   return (
     <div className={`sidebar ${isSidebarOpen ? "open" : "closed"}`}>
@@ -13,7 +14,9 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
       <ul className="list-group list">
         {Categories.map((category, index) => (
           <li key={index}>
-            <a>{category.name}</a>
+            <a href={`#${category.name}`} onClick={closeSidebar}>
+              {category.name}
+            </a>
           </li>
         ))}
       </ul>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Content from "./Content";
 import Footer from "../Components/Footer/Footer";
 import { Categories } from "../assets/data/data";
+import SCrollTop from "../Components/ScrollTop/SCrollTop";
 
 const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,6 +22,7 @@ const Layout = () => {
       <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar}  />
       <Content data={Categories} />
+      <SCrollTop />
       <Footer />
     </div>
   );
