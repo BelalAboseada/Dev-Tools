@@ -1,14 +1,14 @@
 .Footer {
-  background-color: var(--container-color);
-  padding: 10px;
+  padding: 30px;
   bottom: 0;
   position: relative;
   width: 100%;
+  // background-color: var(--container-color);
   .container {
-    max-width: 1200px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
   }
   .opensource {
     color: var(--first-color);

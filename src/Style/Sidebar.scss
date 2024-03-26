@@ -61,7 +61,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     a {
-      color: var(--border-color);
+      color: var(--text-color);
       &:hover {
         color: var(--first-color);
       }

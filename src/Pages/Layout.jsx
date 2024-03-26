@@ -5,7 +5,7 @@ import Content from "./Content";
 import Footer from "../Components/Footer/Footer";
 import { Categories } from "../assets/data/data";
 import SCrollTop from "../Components/ScrollTop/SCrollTop";
-
+import "../Style/Layout.scss"
 const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

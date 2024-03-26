@@ -54,6 +54,11 @@ export const Categories = [
           "A platform to discover and share beautiful color palettes.",
       },
       {
+        name: "colors",
+        link: "https://coolors.co/",
+        description: "The world's largest library of colors.",
+      },
+      {
         name: "Klart",
         link: "https://klart.io",
         description:

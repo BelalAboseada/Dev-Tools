@@ -9,6 +9,7 @@
   --body-color: #222831;
   --container-color: #31363F;
   --border-color: #EEEEEE;
+  --shadow-color:rgba(118,171,174,0.5);
 
   // Font and typography
   --body-font: "Open Sans", sans-serif;
@@ -43,6 +44,7 @@
   --container-color: #F3F3F3;
   --border-color: hsl(0, 0%, 87%);
   --text-white: #fff;
+  --shadow-color:rgba(33,133,213,0.5);
 }
 
 @media screen and (max-width: 1200px) {
